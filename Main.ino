@@ -1,8 +1,8 @@
 #include <ArduinoJson.h>
 #include <ESP8266WiFi.h>
 
-int in = 8;
-int out = 7;
+int in = D8;
+int out = D7;
 int thrsh = 175;
 int beats, rate, beat, ex;
 unsigned long time2, time1;
@@ -81,7 +81,9 @@ void sendmessage() {
   Serial.println(url);
   client.print(String("POST ") + url + " HTTP/1.1\r\n" + "Host: " + host + "\r\n" + "Connection: close\r\n\r\n");
   temp = false;
+  digitalWrite(out, HIGH);
   delay(1000);
+  digitalWrite(out, LOW);
 }
 void push_button() {
   if (digitalRead(in)) {
