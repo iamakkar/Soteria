@@ -143,6 +143,8 @@ loc:
         {
             cout << "Phone call is being made";
             //delay(25000);
+            outtextxy(40,600,"seizure condition");
+
             k2++;
         }
         if(counter3==150 && k3==0 && t3==2)
@@ -153,6 +155,8 @@ loc:
             {
                cout << "Phone call is being made";
             }
+             outtextxy(40,600,"seizure condition");
+         
             k3++;
         }
     }
@@ -163,3 +167,6 @@ loc:
     while(!kbhit()) delay(1);
     return 0;
 }
+
+
+
