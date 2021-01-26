@@ -28,7 +28,7 @@ IFTTT will generate an SMS, containing the GPS location of the user to the regis
 ```
 ## Circuit
 
-![circuit_image](https://github.com/iamakkar/Soteria/blob/main/Images/circuit.jpg?raw=true =250x250)
+![circuit_image](https://github.com/iamakkar/Soteria/blob/main/Images/circuit.jpg?raw=true)
 
 ## Preview
 
